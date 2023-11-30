@@ -25,13 +25,16 @@
  - 변수명과 상수명을 최대한 명시적으로 선택
  - 클래스의 메소드를 최대한 많이 사용해야 함
 */
-#include <iostream>
+#include "Life.h"
+#include "Animal.h"
+#include "Plant.h"
 
 int main()
 {
 	using namespace std;
 
-	cout << "Hello World" << endl;
+	Life panda("판다", LifeType::LT_ANIMAL, "Ailuropoda melanoleuca", "괌과", "중국 사천성");
+	//cout << panda << endl;
 
 	return 0;
 }
